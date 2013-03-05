@@ -9,3 +9,10 @@ var test  = new client(
 test.GetRandomValue('image-tag', function(data){
   console.log(data);
 });
+
+
+var test2 = new client();
+test.GetRandomValue('image-tag', function(data){
+  console.log(data);
+});
+
