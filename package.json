@@ -1,0 +1,29 @@
+{
+  "name": "tag-cloud-client",
+  "version": "0.0.1",
+  "description": "A module to interface with Tag-Cloud",
+  "main": "./lib/tag-cloud-client.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test",
+    "example": "example"
+  },
+  "scripts": {
+    "test": "node ./test/tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bigbam505/tag-cloud-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bigbam505/tag-cloud-client/issues"
+  },
+  "keywords": [
+    "Tag-Cloud"
+  ],
+  "dependencies": {
+    "request": "2.14.0"
+  },
+  "author": "Brent Montague <brent@bmontague.com>",
+  "license": "MIT"
+}
