@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/bigbam505/tag-cloud-client.png?branch=master)](https://travis-ci.org/bigbam505/tag-cloud-client)
 ## About
 
 [Tag-Cloud Client](http://github.com/bigbam505/tag-cloud-client) is a node module designed to integration with [Tag-Cloud](http://github.com/bigbam505/tag-cloud) easily.  It allows for a simple api to communicate with the external Tag-Cloud server and pull in random values.  Ideally this would be used within a campfire script to get an external value.
