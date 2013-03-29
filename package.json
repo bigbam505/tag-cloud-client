@@ -9,7 +9,7 @@
     "example": "example"
   },
   "scripts": {
-    "test": "node ./test/tests.js"
+    "test": "mocha ./test/tests.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,11 @@
   ],
   "dependencies": {
     "request": "2.14.0"
+  },
+  "devDependencies": {
+    "mocha": "1.8.2",
+    "should": "1.2.2",
+    "nock": "0.16.0"
   },
   "author": "Brent Montague <brent@bmontague.com>",
   "license": "MIT"
