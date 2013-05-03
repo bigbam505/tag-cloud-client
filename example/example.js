@@ -2,17 +2,14 @@ var client = require('../lib/tag-cloud-client')
 
 var test  = new client(
     {
-      token: 'secret-token',
-      url: 'http://tag-cloud.domain.com' 
+      token: 'helloworld',
+      url: 'http://localhost:5000'
     });
 
 test.GetRandomValue('image-tag', function(data){
   console.log(data);
 });
 
-
-var test2 = new client();
-test.GetRandomValue('image-tag', function(data){
+test.AddValue('new-value-yay', 'tag-one', function(data){
   console.log(data);
-});
-
+})
