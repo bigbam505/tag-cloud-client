@@ -1,29 +1,42 @@
-[![Build Status](https://travis-ci.org/bigbam505/tag-cloud-client.png?branch=master)](https://travis-ci.org/bigbam505/tag-cloud-client)
-## About
+Tag-Cloud Client
+===================
 
-[Tag-Cloud Client](http://github.com/bigbam505/tag-cloud-client) is a node module designed to integration with [Tag-Cloud](http://github.com/bigbam505/tag-cloud) easily.  It allows for a simple api to communicate with the external Tag-Cloud server and pull in random values.  Ideally this would be used within a campfire script to get an external value.
+[![NPM version](https://badge.fury.io/js/tag-cloud-client.png)](https://npmjs.org/package/tag-cloud-client) [![Build Status](https://travis-ci.org/bigbam505/tag-cloud-client.png?branch=master)](https://travis-ci.org/bigbam505/tag-cloud-client)
 
-## Tag-Cloud Client Usage
+### About
 
+[Tag-Cloud Client](http://github.com/bigbam505/tag-cloud-client) is a node module designed to integration with [Tag-Cloud](http://github.com/bigbam505/tag-cloud) easily.  It allows for a simple api to communicate with the external Tag-Cloud server and perform API functions.  Ideally this would be used within a campfire script to get an external value.
+
+### Tag-Cloud Client Usage
+
+```javascript
     var client = require('tag-cloud-client');
-    var TagCloud = new Client({token: 'tag-cloud-token', url: 'http://tag-cloud.domain.com/});
+    var TagCloud = new Client({token: 'tag-cloud-token', url: 'http://tag-cloud.domain.com/'});
+    
+    //Getting a random value from a tag
     TagCloud.GetRandomValue('tag-name', function(value) {
       console.log(value);
     });
+    
+    //Adding a new value to a tag
+    TagCloud.AddValue('new value to add', 'test-tag', function(response) {
+        console.log(response);
+    });
+```
 
+### Enviromental Variables
 
-## Enviromental Variables
-
+```
     Optionally you can specifiy Enviromental Variables for the following values
     - TAG_CLOUD_TOKEN : The token that is set on the Tag-Cloud Server
     - TAG_CLOUD_URL : The url of the tag cloud server absent a trailing slash
+```
 
-## Issues
+### Issues
 
 Issues for this module can be sent to [Tag-Cloud Client Issues](https://github.com/bigbam505/tag-cloud-client/issues)
 
-
-## License
+### License
 
 Copyright (c) 2013 Brent Montague
 
